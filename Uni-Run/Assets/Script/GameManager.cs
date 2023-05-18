@@ -14,13 +14,19 @@ public class GameManager : MonoBehaviour {
     private int score = 0; // 게임 점수
 
     // 게임 시작과 동시에 싱글턴을 구성
-    void Start()
-    {
-        
-    }
+    void Awake() {
+        // 싱큭턴 변수 Instance가 비어 있는가?
+        if (instance == null)
+        {
+            // instance가 비어 있다면(null) 그곳에 자기 자신을 할당
+            instance = this;
+        }
+        else
+        {
+            //nstance에 이미 다른 GameManager 오브젝트가 할당되어 있는 경우
 
-    // Update is called once per frame
-    void Update()
+            // Update is called once per frame
+            void Update()
     {
         
     }
