@@ -569,6 +569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 578704049}
+  - component: {fileID: 578704050}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -591,6 +592,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578704050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578704048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34db805551bdad342a1a74293dc2e3d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGameover: 0
+  scoreText: {fileID: 0}
+  gameoverUI: {fileID: 0}
 --- !u!1 &722469243
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,8 +788,8 @@ GameObject:
   - component: {fileID: 923391645}
   - component: {fileID: 923391644}
   - component: {fileID: 923391646}
-  - component: {fileID: 923391648}
   - component: {fileID: 923391647}
+  - component: {fileID: 923391648}
   m_Layer: 0
   m_Name: Sky
   m_TagString: Untagged
@@ -898,7 +914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028607026bf37094c9a31495f26f1b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
 --- !u!1 &959815080
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028607026bf37094c9a31495f26f1b03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
 --- !u!1 &1430534879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,8 +1082,8 @@ GameObject:
   - component: {fileID: 1430534880}
   - component: {fileID: 1430534884}
   - component: {fileID: 1430534883}
-  - component: {fileID: 1430534882}
   - component: {fileID: 1430534881}
+  - component: {fileID: 1430534885}
   m_Layer: 0
   m_Name: Sky (1)
   m_TagString: Untagged
@@ -1104,19 +1118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fe77ab308221040abf68709adbf91f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1430534882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430534879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 028607026bf37094c9a31495f26f1b03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
 --- !u!61 &1430534883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1195,6 +1196,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1430534885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430534879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028607026bf37094c9a31495f26f1b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1495630365
 GameObject:
   m_ObjectHideFlags: 0
