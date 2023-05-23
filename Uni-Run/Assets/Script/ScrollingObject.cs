@@ -17,3 +17,4 @@ public class ScrollingObject : MonoBehaviour
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
     }
+}
