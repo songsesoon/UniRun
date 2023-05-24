@@ -372,6 +372,7 @@
 "Assets/Script/BackgroundLoop.cs"
 "Assets/Script/GameManager.cs"
 "Assets/Script/Platform.cs"
+"Assets/Script/PlatformSpawner.cs"
 "Assets/Script/PlayerController.cs"
 "Assets/Script/ScrollingObject.cs"
 -langversion:9.0
